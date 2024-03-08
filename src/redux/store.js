@@ -20,4 +20,4 @@ const store = configureStore({
 
 export default store;
 
-export const server = `${process.env.REACT_APP_SERVER}`;
+export const server = process.env.REACT_APP_SERVER;
