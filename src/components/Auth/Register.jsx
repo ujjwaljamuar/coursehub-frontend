@@ -61,7 +61,7 @@ const Register = () => {
 
   return (
     <Container h={'95vh'}>
-      <VStack h={'full'} justifyContent="center" spacing={'16'}>
+      <VStack h={'full'} justifyContent="center" spacing={'0'}>
         <Heading textTransform={'uppercase'} children={'Registration'} />
 
         <form onSubmit={submitHandler} style={{ width: '100%' }}>
