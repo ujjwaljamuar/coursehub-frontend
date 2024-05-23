@@ -28,7 +28,7 @@ const Login = () => {
       <VStack h={'full'} justifyContent="center" spacing={'16'}>
         <Heading children={'Welcome to CourseBundler'} />
 
-        <form onSubmit={submitHandler} style={{ width: '100%' }}>
+        <form onSubmit={submitHandler} style={{ width: '100%' }} autoComplete='off'>
           <Box my={'4'}>
             <FormLabel htmlFor="email" children="Email Address" />
             <Input
@@ -39,6 +39,7 @@ const Login = () => {
               placeholder="abc@gmail.com"
               type={'email'}
               focusBorderColor="yellow.500"
+              autoComplete='off'
             />
           </Box>
 

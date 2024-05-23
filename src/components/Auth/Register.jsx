@@ -64,7 +64,7 @@ const Register = () => {
       <VStack h={'full'} justifyContent="center" spacing={'0'}>
         <Heading textTransform={'uppercase'} children={'Registration'} />
 
-        <form onSubmit={submitHandler} style={{ width: '100%' }}>
+        <form onSubmit={submitHandler} style={{ width: '100%' }} autoComplete='off'>
           <Box my="4" display={'flex'} justifyContent="center">
             <Avatar src={imagePrev} size={'2xl'} />
           </Box>
@@ -78,6 +78,7 @@ const Register = () => {
               placeholder="abc"
               type={'text'}
               focusBorderColor="yellow.500"
+              autoComplete='off'
             />
           </Box>
 
@@ -91,6 +92,7 @@ const Register = () => {
               placeholder="abc@gmail.com"
               type={'email'}
               focusBorderColor="yellow.500"
+              autoComplete='off'
             />
           </Box>
 
